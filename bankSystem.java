@@ -57,28 +57,29 @@ public class bankSystem {
     }
 }
 
+@SuppressWarnings("unused")
 class Main {
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        bankSystem arr[] = new bankSystem[10];
-        int count = 0;
-        int accGen = 20031200;
-        int a;
+        try (Scanner s = new Scanner(System.in)) {
+            bankSystem arr[] = new bankSystem[10];
+            int count = 0;
+            int accGen = 20031200;
+            int a;
 
-        do {
-            System.out.println("********************");
-            System.out.println("WELCOME TO PVG BANK");
-            System.out.println("********************");
-            System.out.println("1.CREATE ACCOUNT");
-            System.out.println("2.WITHDRAW CASH");
-            System.out.println("3.DEPOSIT CASH");
-            System.out.println("4.CHECK BALANCE");
-            System.out.println("5.EXIT");
-            System.out.println("YOUR CHOICE?:");
-            a = s.nextInt();
+            do {
+                System.out.println("********************");
+                System.out.println("WELCOME TO PVG BANK");
+                System.out.println("********************");
+                System.out.println("1.CREATE ACCOUNT");
+                System.out.println("2.WITHDRAW CASH");
+                System.out.println("3.DEPOSIT CASH");
+                System.out.println("4.CHECK BALANCE");
+                System.out.println("5.EXIT");
+                System.out.println("YOUR CHOICE?:");
+                a = s.nextInt();
 
-            switch (a) {
-                case 1:
+                switch (a) {
+                case 1 -> {
                     System.out.println("ENTER YOUR NAME:");
                     String name = s.next();
                     System.out.println("ENTER YOUR AGE:");
@@ -96,9 +97,8 @@ class Main {
                     System.out.println("ACCOUNT NUMBER IS: " + accGen);
                     accGen++;
                     count++;
-                    break;
-
-                case 2:
+                }
+                case 2 -> {
                     System.out.println("Enter your Account Number:");
                     int aN = s.nextInt();
                     System.out.println("Enter your Password:");
@@ -109,39 +109,33 @@ class Main {
                         int withdrawAmount = s.nextInt();
                         arr[indexW].withdraw(withdrawAmount);
                     }
-                    break;
-
-                case 3:
+                }
+                case 3 -> {
                     System.out.println("Enter your Account Number:");
-                    aN = s.nextInt();
+                    int aN = s.nextInt();
                     System.out.println("Enter your Password:");
-                    pas = s.nextInt();
+                    int pas = s.nextInt();
                     int indexD = new bankSystem().checkMember(pas, aN, arr, count);
                     if (indexD != -1) {
                         System.out.print("Enter amount to deposit: ");
                         int depositAmount = s.nextInt();
                         arr[indexD].deposit(depositAmount);
                     }
-                    break;
-
-                case 4:
+                }
+                case 4 -> {
                     System.out.println("Enter your Account Number:");
-                    aN = s.nextInt();
+                    int aN = s.nextInt();
                     System.out.println("Enter your Password:");
-                    pas = s.nextInt();
+                    int pas = s.nextInt();
                     int indexC = new bankSystem().checkMember(pas, aN, arr, count);
                     if (indexC != -1) {
                         arr[indexC].checkBalance();
                     }
-                    break;
-
-                case 5:
-                    System.out.println("EXITING!");
-                    break;
-
-                default:
-                    System.out.println("INVALID CHOICE!");
+                }
+                case 5 -> System.out.println("EXITING!");
+                default -> System.out.println("INVALID CHOICE!");
             }
         } while (a != 5);
+        }
     }
 }
