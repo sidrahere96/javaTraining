@@ -17,8 +17,6 @@ public class mTon {
         int countn = String.valueOf(n).length();
 
         for (int i = m; i <= n; i++) {
-            /*int number = 5;
-            String formatted = String.format("%03d", number); // Result: "005" */
             String formattedNumber = String.format("%0" + countn + "d", i);
             System.out.print(formattedNumber);
             if (i < n) {
