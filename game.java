@@ -9,6 +9,7 @@
     //input should be the number of levels and the launch order of levels
     
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class game {
     public static void main(String[] args) {
@@ -21,7 +22,8 @@ public class game {
         for (int i = 0; i < n; i++) {
             levels[i] = scanner.nextInt();
         }
-        
+
+        System.out.println("LEVELS ARE:" + Arrays.toString(levels));
         int rewards = 0;
         int lastCompletedLevel = -1; 
         
