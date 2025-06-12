@@ -1,3 +1,4 @@
+//CODE STATEMENT:
     //alice introduced new online game with n levels
     //each day she introduces a level on random but not necessarily increasing
     //a level cannot be launched twice
