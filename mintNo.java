@@ -30,6 +30,7 @@ public class mintNo {
         for (int i = 0; i < len; i++) {
             System.out.println("Kid " + (i + 1) + " has : " + mints[i] + " mints");
         }
-    }
 
+        System.out.println("Total mints in the queue: " + sum);
+    }
 }
