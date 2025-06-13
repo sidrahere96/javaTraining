@@ -70,7 +70,7 @@ class Queue {
     }
 }
 
-public class queueDemo{
+public class queue{
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             System.out.print("Enter size of Queue:");
