@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "magicNo",
+            "request": "launch",
+            "mainClass": "magicNo",
+            "projectName": "javaTraining_a0e19289"
+        },
+        {
+            "type": "java",
             "name": "palindromeCheck",
             "request": "launch",
             "mainClass": "palindromeCheck",

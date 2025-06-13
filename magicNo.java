@@ -17,18 +17,23 @@ public class magicNo{
         int x=sc.nextInt();
         System.out.print("Enter a number(0<=n<=9):");
         int n=sc.nextInt();
-        int num=0;
-        int d=0;
-        int temp=x;
-        if(x>=0 && 0<=n && n<=9){
-            while(temp!=0){
-                d=temp%10;
-                int finalAns=(d+n)%10;
-                temp/=10;
+        int d = 0, finalAns = 0, faceValue = 1;
+        int temp = x;
 
-
-
+        if (x >= 0 && 0 <= n && n <= 9) {
+            while (temp != 0) {
+                d = temp % 10;
+                System.out.println(d);
+                finalAns += magic(d, n) * faceValue;
+                faceValue *= 10;
+                temp /= 10;
             }
-        }
+            System.out.println("MAGIC NUMBER IS:" + finalAns);
+        } else
+            System.out.println("Enter valid Number!");
+    }
+
+    public static int magic(int a, int n) {
+        return (a + n) % 10;
     }
 }
