@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "queue",
+            "request": "launch",
+            "mainClass": "queue",
+            "projectName": "DSA_59698d0c"
+        },
+        {}
+    ]
+}
