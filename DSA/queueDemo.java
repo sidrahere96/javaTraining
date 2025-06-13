@@ -16,18 +16,12 @@ class Queue {
 
     public boolean isFull()
     {
-        if(rear==size-1)
-            return true;
-        else
-            return false;
+        return rear == size - 1;
     }
 
     public boolean isEmpty()
     {
-        if(front==-1 && rear==-1)
-            return true;
-        else 
-            return false;
+        return (front==-1 && rear==-1);
     }
 
     public void enqueue(int a){
@@ -78,43 +72,35 @@ class Queue {
 
 public class queueDemo{
     public static void main(String[] args) {
-        Scanner sc =new Scanner(System.in);
-        System.out.print("Enter size of Queue:");
-        int a=sc.nextInt();
-        Queue q =new Queue(a);
-        int choice;
-        do {
-            System.out.println(" ");
-            System.out.println("           *********************");
-            System.out.println("                   MENU");
-            System.out.println("           *********************");
-            System.out.println("            1.ADD ELEMENT");
-            System.out.println("            2.DELETE ELEMENT");
-            System.out.println("            3.DISPLAY QUEUE");
-            System.out.println("            4.EXIT");
-            System.out.println("           *********************");
-            System.out.print("YOUR CHOICE?:");
-            choice=sc.nextInt();
-            switch(choice){
-                case 1:
-                    System.out.print("Enter element to add:");
-                    int ele=sc.nextInt();
-                    q.enqueue(ele);
-                    break;
-                case 2:
-                    q.dequeue();
-                    break;
-                case 3:
-                    q.display();
-                    break;
-
-                case 4:
-                    System.out.println("EXITING!");
-                    break;
-
-                default:
-                    System.out.println("INVALID CHOICE!");
-            }
-        } while (choice!=4);
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter size of Queue:");
+            int a = sc.nextInt();
+            Queue q = new Queue(a);
+            int choice;
+            do {
+                System.out.println(" ");
+                System.out.println("           *********************");
+                System.out.println("                   MENU");
+                System.out.println("           *********************");
+                System.out.println("            1.ADD ELEMENT");
+                System.out.println("            2.DELETE ELEMENT");
+                System.out.println("            3.DISPLAY QUEUE");
+                System.out.println("            4.EXIT");
+                System.out.println("           *********************");
+                System.out.print("YOUR CHOICE?:");
+                choice = sc.nextInt();
+                switch (choice) {
+                    case 1 -> {
+                        System.out.print("Enter element to add:");
+                        int ele = sc.nextInt();
+                        q.enqueue(ele);
+                    }
+                    case 2 -> q.dequeue();
+                    case 3 -> q.display();
+                    case 4 -> System.out.println("EXITING!");
+                    default -> System.out.println("INVALID CHOICE!");
+                }
+            } while (choice != 4);
+        }
     }
 }
