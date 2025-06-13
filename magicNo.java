@@ -17,7 +17,7 @@ public class magicNo{
         int x=sc.nextInt();
         System.out.print("Enter a number(0<=n<=9):");
         int n=sc.nextInt();
-        int d = 0, finalAns = 0, faceValue = 1;
+        int d, finalAns = 0, faceValue = 1;
         int temp = x;
 
         if (x >= 0 && 0 <= n && n <= 9) {
