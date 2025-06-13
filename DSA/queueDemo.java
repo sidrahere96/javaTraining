@@ -68,7 +68,7 @@ class Queue {
         {
             System.out.print("QUEUE ELEMENTS: ");
             for (int i = front; i <= rear; i++) {
-                System.out.print(queueArray[i] + "  ");
+                System.out.print(queueArray[i] + " -> ");
             }
         }
         else
