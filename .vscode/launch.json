@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "palindromeCheck",
+            "request": "launch",
+            "mainClass": "palindromeCheck",
+            "projectName": "javaTraining_a0e19289"
+        },
+        {
+            "type": "java",
+            "name": "queue",
+            "request": "launch",
+            "mainClass": "queue",
+            "projectName": "javaTraining_a0e19289"
+        },
+        {}
+    ]
+}
