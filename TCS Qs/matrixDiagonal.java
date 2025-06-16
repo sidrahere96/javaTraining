@@ -25,12 +25,8 @@ public class matrixDiagonal {
 
         int primaryDiagonal=0,secondaryDiagonal=0;
         for(int i=0;i<n;i++) {
-            for(int j=0;j<n;j++) {
-                if(i==j) {
-                    primaryDiagonal+=arr[i][i];
-                    secondaryDiagonal+=arr[i][n-i-1];
-                }
-            }
+            primaryDiagonal+=arr[i][i];
+            secondaryDiagonal+=arr[i][n-i-1];
         }
 
         System.out.println("PRIMARY DIAGONAL SUM: " + primaryDiagonal);
