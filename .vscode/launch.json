@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "binarySearch",
+            "request": "launch",
+            "mainClass": "binarySearch",
+            "projectName": "javaTraining_a0e19289"
+        },
+        {
+            "type": "java",
             "name": "linearSearch",
             "request": "launch",
             "mainClass": "linearSearch",
