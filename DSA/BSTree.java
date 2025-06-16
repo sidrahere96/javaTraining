@@ -10,7 +10,7 @@ class TreeNode {
     }
 }
 
-public class BSTtree {
+public class BSTree {
     TreeNode root;
 
     // Insert node using recursion
@@ -56,7 +56,7 @@ public class BSTtree {
     }
 
     public static void main(String[] args) {
-        BSTtree tree = new BSTtree();
+        BSTree tree = new BSTree();
 
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter no. elements to put in the tree:");
