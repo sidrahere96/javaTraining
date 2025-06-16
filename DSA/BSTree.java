@@ -14,7 +14,7 @@ public class BSTree {
     TreeNode root;
 
     // Insert node using recursion
-    public TreeNode insert(TreeNode node, int value) {
+    TreeNode insert(TreeNode node, int value) {
         if (node == null) {
             return new TreeNode(value);
         }
@@ -29,7 +29,7 @@ public class BSTree {
     }
 
     //(Left, Root, Right)
-    public void inOrder(TreeNode node) {
+    void inOrder(TreeNode node) {
         if (node != null) {
             inOrder(node.left);
             System.out.print(node.data + " ");
@@ -38,7 +38,7 @@ public class BSTree {
     }
 
     // (Root, Left, Right)
-    public void preOrder(TreeNode node) {
+    void preOrder(TreeNode node) {
         if (node != null) {
             System.out.print(node.data + " ");
             preOrder(node.left);
@@ -47,7 +47,7 @@ public class BSTree {
     }
 
     //(Left, Right, Root)
-    public void postOrder(TreeNode node) {
+    void postOrder(TreeNode node) {
         if (node != null) {
             postOrder(node.left);
             postOrder(node.right);
