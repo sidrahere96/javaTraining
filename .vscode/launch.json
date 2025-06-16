@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "matrixDiagonal",
+            "request": "launch",
+            "mainClass": "matrixDiagonal",
+            "projectName": "javaTraining_a0e19289"
+        },
+        {
+            "type": "java",
             "name": "quickSort",
             "request": "launch",
             "mainClass": "quickSort",
