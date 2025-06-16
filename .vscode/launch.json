@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "insertionSort",
+            "request": "launch",
+            "mainClass": "insertionSort",
+            "projectName": "javaTraining_a0e19289"
+        },
+        {
+            "type": "java",
             "name": "insertSort",
             "request": "launch",
             "mainClass": "insertSort",
