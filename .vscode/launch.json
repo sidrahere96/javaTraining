@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "bubbleSort",
+            "request": "launch",
+            "mainClass": "bubbleSort",
+            "projectName": "javaTraining_a0e19289"
+        },
+        {
+            "type": "java",
+            "name": "buubleSort",
+            "request": "launch",
+            "mainClass": "buubleSort",
+            "projectName": "javaTraining_a0e19289"
+        },
+        {
+            "type": "java",
             "name": "binarySearchRecursion",
             "request": "launch",
             "mainClass": "binarySearchRecursion",
