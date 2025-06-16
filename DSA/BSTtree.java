@@ -10,7 +10,7 @@ class TreeNode {
     }
 }
 
-public class tree {
+public class BSTtree {
     TreeNode root;
 
     // Insert node using recursion
@@ -28,7 +28,7 @@ public class tree {
         return node;
     }
 
-    // In-order Traversal (Left, Root, Right)
+    //(Left, Root, Right)
     public void inOrder(TreeNode node) {
         if (node != null) {
             inOrder(node.left);
@@ -37,7 +37,7 @@ public class tree {
         }
     }
 
-    // Pre-order Traversal (Root, Left, Right)
+    // (Root, Left, Right)
     public void preOrder(TreeNode node) {
         if (node != null) {
             System.out.print(node.data + " ");
@@ -46,7 +46,7 @@ public class tree {
         }
     }
 
-    // Post-order Traversal (Left, Right, Root)
+    //(Left, Right, Root)
     public void postOrder(TreeNode node) {
         if (node != null) {
             postOrder(node.left);
@@ -56,7 +56,7 @@ public class tree {
     }
 
     public static void main(String[] args) {
-        tree tree = new tree();
+        BSTtree tree = new BSTtree();
 
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter no. elements to put in the tree:");
@@ -66,7 +66,7 @@ public class tree {
             int ele=sc.nextInt();
             tree.root=tree.insert(tree.root,ele);
         }
-        // Traversals
+        
         System.out.print("In-order: ");
         tree.inOrder(tree.root);
         System.out.println();
