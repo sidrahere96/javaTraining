@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "selectionSort",
+            "request": "launch",
+            "mainClass": "selectionSort",
+            "projectName": "javaTraining_a0e19289"
+        },
+        {
+            "type": "java",
             "name": "bubbleSort",
             "request": "launch",
             "mainClass": "bubbleSort",
