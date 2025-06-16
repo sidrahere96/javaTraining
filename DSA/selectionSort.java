@@ -11,8 +11,6 @@ public class selectionSort {
                 if (arr[j] < arr[minIndex])
                     minIndex = j;
             }
-
-            // Swap
             int temp = arr[i];
             arr[i] = arr[minIndex];
             arr[minIndex] = temp;
