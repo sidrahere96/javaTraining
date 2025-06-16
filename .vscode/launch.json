@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "tree",
+            "request": "launch",
+            "mainClass": "tree",
+            "projectName": "javaTraining_a0e19289"
+        },
+        {
+            "type": "java",
+            "name": "arrayEvenOddSum",
+            "request": "launch",
+            "mainClass": "arrayEvenOddSum",
+            "projectName": "javaTraining_a0e19289"
+        },
+        {
+            "type": "java",
+            "name": "game",
+            "request": "launch",
+            "mainClass": "game",
+            "projectName": "javaTraining_a0e19289"
+        },
+        {
+            "type": "java",
             "name": "mintNo",
             "request": "launch",
             "mainClass": "mintNo",
