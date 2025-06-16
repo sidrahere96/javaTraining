@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "quickSort",
+            "request": "launch",
+            "mainClass": "quickSort",
+            "projectName": "javaTraining_a0e19289"
+        },
+        {
+            "type": "java",
             "name": "mergeSort",
             "request": "launch",
             "mainClass": "mergeSort",
