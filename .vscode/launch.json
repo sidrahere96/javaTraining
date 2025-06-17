@@ -5,6 +5,13 @@
             "name": "fuel",
             "request": "launch",
             "mainClass": "fuel",
+            "projectName": "javaTraining_74cf289"
+        },
+        {
+            "type": "java",
+            "name": "fuel",
+            "request": "launch",
+            "mainClass": "fuel",
             "projectName": "javaTraining_a0e19289"
         },
         {

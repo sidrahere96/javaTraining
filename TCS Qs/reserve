@@ -1,0 +1,55 @@
+
+    //public static int maxVolume(int N, int K, int[] prices, int[] volumes) {
+        //->BELOW CODE AS PER THE QS
+        // int totalVolume=0;
+        // for(int i=0;i<volumes.length;i++) {
+        //         if(prices[i] <= K) {
+        //             totalVolume += volumes[i];
+        //             K -= prices[i]; 
+        //         }
+        // }
+        //return totalVolume;
+
+        //->BELOW CODE AS PER CHANGES:
+        //need to take the maximum volume of fuel first that can be bought within the budget K instead of going with sequence
+        //int[][] visited = new int[N + 1][K + 1];
+        // for (int i = 0; i <= N; i++) {
+        //     for (int j = 0; j <= K; j++) {
+        //         if (i == 0 || j == 0) {
+        //             visited[i][j] = 0;
+        //         } else if (prices[i - 1] <= j) {
+        //             visited[i][j] = Math.max(visited[i - 1][j], volumes[i - 1] + visited[i - 1][j - prices[i - 1]]);
+        //         } else {
+        //             visited[i][j] = visited[i - 1][j];
+        //         }
+        //     }
+        // }
+        // return visited[N][K];
+
+        //METHOD 2:
+        // int visited[]= new int[K + 1];
+        // for (int i = 0; i < N; i++) {
+        //     for (int j = K; j >= prices[i]; j--) {
+        //         //System.out.println("VISITED:"+visited[j]);
+        //         visited[j] = Math.max(visited[j], visited[j - prices[i]] + volumes[i]);
+        //     }
+        // }
+        // //System.out.println("VISITED:"+Arrays.toString(visited));
+        // //System.out.println("K:"+K);
+        // return visited[K];
+
+        //METHOD 3:
+    //     int max=-1;
+    //     int[] visited=new int[N];
+    //     int index=0;
+    //     for(int i=0;i<N;i++) {
+    //         if(visited[i]!=i) {
+    //             if(volumes[i]>max) {
+    //                 max=volumes[i];
+    //                 index=i;
+    //             }
+    //         }
+    //         visited[i]=index;
+    //     }
+    //     return index;
+    // }

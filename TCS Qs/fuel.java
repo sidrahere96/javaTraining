@@ -12,6 +12,21 @@ Find the **maximum overall volume of fuel** that Hari can purchase within his bu
 import java.util.*;
 
 public class fuel {
+    
+    public static int maxVolume(int N, int K, int[] prices, int[] volumes,int visited[]) {
+        int max=-1;
+        int index=0;
+        for(int i=0;i<volumes.length;i++) {
+            if(visited[i]!=i) {
+                if(volumes[i]>max) {
+                    max=volumes[i];
+                    index=i;
+                }
+            }
+        }
+        visited[index]=index;
+        return index;
+    }
     public static void main(String[] args) {
         @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
@@ -19,7 +34,7 @@ public class fuel {
         int N = sc.nextInt();//->fuel category
         System.out.print("Enter available money unit:");
         int K = sc.nextInt();//->avaiable money unit
-        
+        int[] visited=new int[N];
         int[] prices = new int[N];
         int[] volumes = new int[N];
         System.out.println("Enter price for each fuel category:");
@@ -32,35 +47,16 @@ public class fuel {
             System.out.print("Enter volume of fuel category "+(i+1)+":");
             volumes[i] = sc.nextInt();
         }
-        
-        System.out.println(maxVolume(N, K, prices, volumes));
-    }
-    
-    public static int maxVolume(int N, int K, int[] prices, int[] volumes) {
-        //->BELOW CODE AS PER THE QS
-        // int totalVolume=0;
-        // for(int i=0;i<volumes.length;i++) {
-        //         if(prices[i] <= K) {
-        //             totalVolume += volumes[i];
-        //             K -= prices[i]; 
-        //         }
-        // }
-        //return totalVolume;
-
-        //->BELOW CODE AS PER CHANGES:
-        //need to take the maximum volume of fuel first that can be bought within the budget K
-        int[][] visited = new int[N + 1][K + 1];
-        for (int i = 0; i <= N; i++) {
-            for (int j = 0; j <= K; j++) {
-                if (i == 0 || j == 0) {
-                    visited[i][j] = 0;
-                } else if (prices[i - 1] <= j) {
-                    visited[i][j] = Math.max(visited[i - 1][j], volumes[i - 1] + visited[i - 1][j - prices[i - 1]]);
-                } else {
-                    visited[i][j] = visited[i - 1][j];
-                }
+        int C=0,totalVolumes=0;
+        //System.out.println(maxVolume(N, K, prices, volumes));
+        while(K>0 && C<volumes.length){
+            int lg=maxVolume(N,K,prices,volumes,visited);
+            if(prices[lg]<=K){
+                K-=prices[lg];
+                totalVolumes+=volumes[lg];
             }
+            C++;
         }
-        return visited[N][K];
+        System.out.println("Total Volumes that can be purchased in budget is:"+totalVolumes);
     }
 }
