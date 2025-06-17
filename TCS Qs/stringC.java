@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class stringC {
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter first string (a):");

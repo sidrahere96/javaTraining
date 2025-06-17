@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class mTon {
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the value of m: ");
         int m = scanner.nextInt();

@@ -14,17 +14,18 @@ public class bubbleSort {
         }
     }
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter no. elements in array:");
-        int n=sc.nextInt();
-        int[] arr=new int [n];
-        System.out.println("Enter the elements to put in the array:");
-        for(int i=0;i<n;i++){
-            int ele=sc.nextInt();
-            arr[i]=ele;
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter no. elements in array:");
+            int n = sc.nextInt();
+            int[] arr = new int[n];
+            System.out.println("Enter the elements to put in the array:");
+            for (int i = 0; i < n; i++) {
+                int ele = sc.nextInt();
+                arr[i] = ele;
+            }
+            System.out.println("ARRAY IS: " + Arrays.toString(arr));
+            sort(arr);
+            System.out.println("SORTED ARRAY IS: " + Arrays.toString(arr));
         }
-        System.out.println("ARRAY IS: " + Arrays.toString(arr));
-        sort(arr);
-        System.out.println("SORTED ARRAY IS: " + Arrays.toString(arr));
     }
 }

@@ -58,25 +58,26 @@ public class BSTree {
     public static void main(String[] args) {
         BSTree tree = new BSTree();
 
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter no. elements to put in the tree:");
-        int n=sc.nextInt();
-        System.out.println("Enter the elements to put in the tree:");
-        for(int i=0;i<n;i++){
-            int ele=sc.nextInt();
-            tree.root=tree.insert(tree.root,ele);
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter no. elements to put in the tree:");
+            int n = sc.nextInt();
+            System.out.println("Enter the elements to put in the tree:");
+            for (int i = 0; i < n; i++) {
+                int ele = sc.nextInt();
+                tree.root = tree.insert(tree.root, ele);
+            }
+
+            System.out.print("In-order: ");
+            tree.inOrder(tree.root);
+            System.out.println();
+
+            System.out.print("Pre-order: ");
+            tree.preOrder(tree.root);
+            System.out.println();
+
+            System.out.print("Post-order: ");
+            tree.postOrder(tree.root);
+            System.out.println();
         }
-        
-        System.out.print("In-order: ");
-        tree.inOrder(tree.root);
-        System.out.println();
-
-        System.out.print("Pre-order: ");
-        tree.preOrder(tree.root);
-        System.out.println();
-
-        System.out.print("Post-order: ");
-        tree.postOrder(tree.root);
-        System.out.println();
     }
 }

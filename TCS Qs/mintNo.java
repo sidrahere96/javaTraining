@@ -7,6 +7,7 @@
 import java.util.Scanner;
 public class mintNo {
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of mints with the first kid (n): ");
         int n = scanner.nextInt();

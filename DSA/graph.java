@@ -29,6 +29,7 @@ class Graph {
 }
 
 public class graph {    
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter the dimension of matrix:");
@@ -39,7 +40,7 @@ public class graph {
         int row,col;
         for(int a=0;a<ele;a++) {
             System.out.print("    ENTER ELEMENTS:");
-            int b=sc.nextInt(); 
+            sc.nextInt(); 
             System.out.print("    ENTER its row:");
             row=sc.nextInt();
             System.out.print("    ENTER its colomn:");
@@ -48,5 +49,6 @@ public class graph {
         }
 
         g.display();
+        sc.close();
     }
 }

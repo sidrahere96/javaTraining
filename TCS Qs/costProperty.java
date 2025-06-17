@@ -6,7 +6,7 @@ public class costProperty {
     //take no.of interior wall,exterior wall,surface of inetrior and exterior wall (in sq.feet)
     //calculate cost of interior and exterior wall painting
     public static void main(String[] args) {
-
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the number of interior walls:");
         int interiorWalls =  scanner.nextInt();

@@ -8,11 +8,12 @@
     //goal is to find the maximum rewards you can earn based on launch order
     //input should be the number of levels and the launch order of levels
     
-import java.util.Scanner;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class game {
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of levels: ");
         int n = scanner.nextInt();

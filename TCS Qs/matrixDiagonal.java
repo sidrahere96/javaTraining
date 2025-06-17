@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class matrixDiagonal {
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter the size of array(n:n*n):");
         int n=sc.nextInt();

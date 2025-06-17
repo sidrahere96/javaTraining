@@ -15,26 +15,26 @@ public class binarySearchRecursion {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter no. elements in array:");
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        System.out.println("Enter the elements to put in the array:");
-        for (int i = 0; i < n; i++) {
-            int ele = sc.nextInt();
-            arr[i] = ele;
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter no. elements in array:");
+            int n = sc.nextInt();
+            int[] arr = new int[n];
+            System.out.println("Enter the elements to put in the array:");
+            for (int i = 0; i < n; i++) {
+                int ele = sc.nextInt();
+                arr[i] = ele;
+            }
+            Arrays.sort(arr);
+            System.out.println("SORTED ARRAY IS: " + Arrays.toString(arr));
+            System.out.print("Enter the element to search:");
+            int key = sc.nextInt();
+
+            int result = search(arr, key, 0, n - 1);
+
+            if (result != -1)
+                System.out.println("ELEMENT FOUND AT: " + result);
+            else
+                System.out.println("~ELEMENT NOT FOUND~");
         }
-        Arrays.sort(arr);
-        System.out.println("SORTED ARRAY IS: " + Arrays.toString(arr));
-        System.out.print("Enter the element to search:");
-        int key = sc.nextInt();
-
-        int result = search(arr, key, 0, n - 1);
-
-        if (result != -1)
-            System.out.println("ELEMENT FOUND AT: " + result);
-        else
-            System.out.println("~ELEMENT NOT FOUND~");
-        
     }
 }

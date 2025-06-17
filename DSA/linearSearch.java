@@ -12,6 +12,7 @@ public class linearSearch {
     }
 
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter no. elements in array:");
         int n=sc.nextInt();

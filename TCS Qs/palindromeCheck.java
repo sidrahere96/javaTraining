@@ -15,6 +15,7 @@ import java.util.Scanner;
 
 public class palindromeCheck {
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the String to check Palindrome:");
         String a = sc.nextLine();
