@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "nthSmallest",
+            "request": "launch",
+            "mainClass": "nthSmallest",
+            "projectName": "javaTraining_74cf289"
+        },
+        {
+            "type": "java",
             "name": "fuel",
             "request": "launch",
             "mainClass": "fuel",
