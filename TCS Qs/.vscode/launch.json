@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "separtingZero",
+            "request": "launch",
+            "mainClass": "separtingZero",
+            "projectName": "TCS Qs_28922a64"
+        },
+        {}
+    ]
+}
