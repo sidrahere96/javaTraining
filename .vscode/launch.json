@@ -2,6 +2,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "magicalNo",
+            "request": "launch",
+            "mainClass": "magicalNo",
+            "projectName": "javaTraining_74cf289"
+        },
+        {
+            "type": "java",
+            "name": "magicNo",
+            "request": "launch",
+            "mainClass": "magicNo",
+            "projectName": "javaTraining_74cf289"
+        },
+        {
+            "type": "java",
+            "name": "a",
+            "request": "launch",
+            "mainClass": "a",
+            "projectName": "javaTraining_74cf289"
+        },
+        {
+            "type": "java",
+            "name": "longestWord",
+            "request": "launch",
+            "mainClass": "longestWord",
+            "projectName": "javaTraining_74cf289"
+        },
+        {
+            "type": "java",
+            "name": "carRent",
+            "request": "launch",
+            "mainClass": "carRent",
+            "projectName": "javaTraining_74cf289"
+        },
+        {
+            "type": "java",
+            "name": "alternateZero",
+            "request": "launch",
+            "mainClass": "alternateZero",
+            "projectName": "javaTraining_74cf289"
+        },
+        {
+            "type": "java",
+            "name": "multipleOfTenAtEnd",
+            "request": "launch",
+            "mainClass": "multipleOfTenAtEnd",
+            "projectName": "javaTraining_74cf289"
+        },
+        {
+            "type": "java",
+            "name": "sumOfAdjacent",
+            "request": "launch",
+            "mainClass": "sumOfAdjacent",
+            "projectName": "javaTraining_74cf289"
+        },
+        {
+            "type": "java",
+            "name": "prisonerCandy",
+            "request": "launch",
+            "mainClass": "prisonerCandy",
+            "projectName": "javaTraining_74cf289"
+        },
+        {
+            "type": "java",
             "name": "nthSmallest",
             "request": "launch",
             "mainClass": "nthSmallest",

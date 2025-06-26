@@ -2,6 +2,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "sumOfSubstring",
+            "request": "launch",
+            "mainClass": "sumOfSubstring",
+            "projectName": "TCS Qs_28922a64"
+        },
+        {
+            "type": "java",
+            "name": "numberSequence",
+            "request": "launch",
+            "mainClass": "numberSequence",
+            "projectName": "TCS Qs_28922a64"
+        },
+        {
+            "type": "java",
+            "name": "multipleof10InSequence",
+            "request": "launch",
+            "mainClass": "multipleof10InSequence",
+            "projectName": "TCS Qs_28922a64"
+        },
+        {
+            "type": "java",
+            "name": "multipleOfTenAtEnd",
+            "request": "launch",
+            "mainClass": "multipleOfTenAtEnd",
+            "projectName": "TCS Qs_28922a64"
+        },
+        {
+            "type": "java",
+            "name": "rotatingArray",
+            "request": "launch",
+            "mainClass": "rotatingArray",
+            "projectName": "TCS Qs_28922a64"
+        },
+        {
+            "type": "java",
+            "name": "brainGame",
+            "request": "launch",
+            "mainClass": "brainGame",
+            "projectName": "TCS Qs_28922a64"
+        },
+        {
+            "type": "java",
             "name": "separtingZero",
             "request": "launch",
             "mainClass": "separtingZero",
